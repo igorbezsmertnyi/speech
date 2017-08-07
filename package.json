@@ -1,0 +1,20 @@
+{
+  "name": "speech-js",
+  "version": "0.0.4",
+  "description": "lib for recognition and synthesis of speech",
+  "main": "index.js",
+  "repository": "git@github.com:igorbezsmertnyi/speech.git",
+  "author": "Igor Bezsmertnyi bezsmertnyi.igo@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "keywords": [
+    "speech",
+    "recognition",
+    "synthesis",
+    "speech recognition",
+    "speech synthesis"
+  ],
+  "dependencies": {}
+}
