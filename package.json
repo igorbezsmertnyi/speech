@@ -1,6 +1,6 @@
 {
   "name": "speech-js",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "lib for recognition and synthesis of speech",
   "main": "index.js",
   "repository": "git@github.com:igorbezsmertnyi/speech.git",
