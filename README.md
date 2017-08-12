@@ -5,8 +5,10 @@ speech recognition and speech synthesis
 * [Quick start](#quick-start)
 * [Synthesis](#synthesis)
   * [voice](#voice)
+  * [synthesis methods](#synthesis-methods)
 * [Recognition](#recognition)
   * [grammar](#grammar)
+  * [recognition methods](#recognition-methods)
 
 # Instalation
 `npm install speech-js --save` or `yarn add speech-js`
@@ -55,6 +57,13 @@ speechSynthesis.onvoiceschanged = () => {
 ```
 where `voices` is an array with voices installed on your computer
 
+### synthesis methods
+`speechSynthesis.cancel()`
+
+`speechSynthesis.pause()`
+
+`speechSynthesis.resume()`
+
 # Recognition
 
 `speech.recognition(lang, alternatives, grammar)`
@@ -72,3 +81,11 @@ Example:
 ```
 const grammar = #JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;
 ```
+
+### recognition methods
+
+`speech.recognition().start()`
+
+`speech.recognition().stop()`
+
+`speech.recognition().abort()`

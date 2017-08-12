@@ -1,6 +1,6 @@
 {
   "name": "speech-js",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "lib for recognition and synthesis of speech",
   "main": "index.js",
   "repository": "git@github.com:igorbezsmertnyi/speech.git",
@@ -11,10 +11,20 @@
   },
   "keywords": [
     "speech",
+    "speech js",
+    "speech javascript",
     "recognition",
+    "recognition js",
+    "recognition javascript",
     "synthesis",
+    "synthesis js",
+    "synthesis javascript",
     "speech recognition",
-    "speech synthesis"
+    "speech recognition js",
+    "speech recognition javascript",
+    "speech synthesis",
+    "speech synthesis js",
+    "speech synthesis javascript"
   ],
   "dependencies": {
     "babel-cli": "^6.24.1",
