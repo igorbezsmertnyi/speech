@@ -1,5 +1,5 @@
 module.exports = (text, voice, rate = 1, volume = 1, pitch = 1) => {
-  const msg = new SpeechSynthesisUtterance()
+  const msg = new window.SpeechSynthesisUtterance()
 
   if (typeof voice === 'string') {
     msg.lang = voice
