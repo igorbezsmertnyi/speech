@@ -1,12 +1,17 @@
-module.exports = (text, lang) => {
-  speechSynthesis.onvoiceschanged = () => {
-    const msg = new SpeechSynthesisUtterance()
-    const voices = window.speechSynthesis.getVoices()
-    const voice = voices.find(voice => voice.lang == lang)
+module.exports = (text, voice, rate = 1, volume = 1, pitch = 1) => {
+  const msg = new SpeechSynthesisUtterance()
+
+  if (typeof voice === 'string') {
+    msg.lang = voice
+  } else if (typeof voice === 'object') {
     msg.voice = voice
-    msg.rate = 1
-    msg.pitch = 1
-    msg.text = text
-    if (!speechSynthesis.speaking) speechSynthesis.speak(msg)
   }
+
+  msg.rate = rate
+  msg.pitch = pitch
+  msg.volume = volume
+  msg.text = text
+  if (!speechSynthesis.speaking) speechSynthesis.speak(msg)
+
+  return msg
 }
