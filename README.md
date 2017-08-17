@@ -1,6 +1,8 @@
 # speech-js
 speech recognition and speech synthesis
 
+[DEMO](https://igorbezsmertnyi.github.io/speech-demo/)
+
 * [Instalation](#instalation)
 * [Quick start](#quick-start)
 * [Synthesis](#synthesis)
